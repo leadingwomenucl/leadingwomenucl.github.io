@@ -384,6 +384,13 @@ h2.welcome-title {
     margin-bottom: 0;
 }
 
+.text-indent {
+    text-indent: 30px;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
 .our-offers {
     margin-top: 3px;
     padding: 0 50px;
