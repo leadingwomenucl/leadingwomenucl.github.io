@@ -52,8 +52,13 @@ jQuery(document).ready(function($) {
 	$('.menu-responsive a').click(function() {
 		$('.menu-responsive').slideToggle().hide();
 	});
-
-
+	
+  	$("#hide").click(function(){
+    	$(".pwm").hide(500);
+  	});
+  	$("#show").click(function(){
+    	$(".pwm").show(500);
+  	});
 
 
 });

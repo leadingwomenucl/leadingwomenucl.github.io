@@ -155,7 +155,7 @@ ul.main-menu li {
 ul.main-menu li a {
     padding: 10px 15px;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 ul.main-menu li a.active {
@@ -354,7 +354,7 @@ h2.welcome-title {
 }
 
 .story-bg {
-    background: url("../img/bg1.png");
+    background: url("../img/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -388,7 +388,12 @@ h2.welcome-title {
     text-indent: 30px;
     padding: 0;
     margin: 0;
-    font-size: 14px;
+    font-size: 15px;
+}
+
+#btns{
+    right: 0;
+    text-align: center;
 }
 
 .our-offers {
@@ -575,6 +580,14 @@ span.offer-right {
     -moz-animation-delay: 3.4s;
     -webkit-animation-delay: 3.4s;
     animation-delay: 3.4s;
+}
+
+.committee {
+    text-align: center;
+}
+
+#partners {
+    border-top: 2px solid #46494f;
 }
 
 .blog-posts {
