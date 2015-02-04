@@ -396,6 +396,12 @@ h2.welcome-title {
     text-align: center;
 }
 
+#nohighlight {
+    color:#000;
+    font-style: italic;
+}
+
+
 .our-offers {
     margin-top: 3px;
     padding: 0 50px;
