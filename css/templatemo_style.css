@@ -206,6 +206,10 @@ ul.main-menu li a.active {
     animation-delay: 0.5s;
 }
 
+.pres-intro {
+    margin-bottom: 20px;
+}
+
 h2.welcome-title {
     font-weight: 100;
     color: #fff;
@@ -261,6 +265,11 @@ h2.welcome-title {
     -moz-animation-delay: 0.5s;
     -webkit-animation-delay: 0.5s;
     animation-delay: 0.5s;
+}
+
+.b-center {
+    display:inline-block;
+
 }
 
 .project-item {
@@ -397,6 +406,11 @@ h2.welcome-title {
 }
 
 .nohighlight {
+    color:#000;
+
+}
+
+#nowhite {
     color:#000;
     font-style: italic;
 }
