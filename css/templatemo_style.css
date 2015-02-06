@@ -753,6 +753,12 @@ span.solid-line {
     animation-delay: 1.9s;
 }
 
+#newsbottom {
+    border-top: 2px solid #46494f;
+    padding: 50px;
+}
+
+
 .contact-header {
     margin-bottom: 100px;
 }
