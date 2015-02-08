@@ -1,3 +1,7 @@
+function mobile() {
+    alert("Please rotate your phone to landscape view for a better display!");
+}
+
 jQuery(document).ready(function($) {
 
 	$(".main-menu a").click(function(){
@@ -62,10 +66,6 @@ jQuery(document).ready(function($) {
 
 
 });
-
-function mobile() {
-    alert("Please rotate your phone to landscape view for a better display!");
-}
 
 function targetopener(mylink, closeme, closeonly) {
 	if (! (window.focus&& window.opener))return true;
