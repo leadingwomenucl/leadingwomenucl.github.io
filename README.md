@@ -1,5 +1,4 @@
 # leadingwomenucl.github.io
 Leading Women Society website, still under development.
 
-Theme: Based on Raleway, customised for LWS
-Currently published online for convenience in facilitating discussions within the committee, and not for the public as yet.
+Currently published online for convenience in facilitating discussions within the committee and sponsor viewing, and not for the public as yet.
