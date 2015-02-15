@@ -358,7 +358,21 @@ h2.welcome-title {
 }
 
 .story-bg {
-    background: url("../img/story-bg.png");
+    background: url("../img/quad-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -moz-animation-delay: 1.7s;
+    -webkit-animation-delay: 1.7s;
+    animation-delay: 1.7s;
+}
+
+.tn-bg {
+    background: url("../img/UCL-quad.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
