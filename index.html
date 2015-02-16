@@ -1,6 +1,3 @@
-
-
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -37,14 +34,18 @@
 					<nav id="nav" class="main-navigation hidden-xs hidden-sm">
 						<ul class="main-menu">
 							<li><a class="show-1 active homebutton" href="#">Home</a></li>
-
+							<li><a class="show-2 aboutbutton" href="#">About | Sponsors</a></li>
+							<li><a class="show-3 projectbutton" href="#">Committee | Partners</a></li>
+							<li><a class="show-4 blogbutton" href="#">News | Events</a></li>
 							<li><a class="show-5 contactbutton" href="#">Contact</a></li>
 						</ul>
 					</nav>
 					<nav class="main-navigation menu-responsive hidden-md hidden-lg">
 						<ul class="main-menu">
 							<li><a class="show-1 active homebutton" href="#">Home</a></li>
-
+							<li><a class="show-2 aboutbutton" href="#">About &amp; Sponsors</a></li>
+							<li><a class="show-3 projectbutton" href="#">Committee &amp; Partners</a></li>
+							<li><a class="show-4 blogbutton" href="#">News &amp; Events</a></li>
 							<li><a class="show-5 contactbutton" href="#">Contact</a></li>
 						</ul>
 					</nav>
@@ -57,115 +58,17 @@
 	<div id="menu-container">
 		<div id="menu-1" class="homepage home-section container">
 			<div class="home-intro text-center">
-				<h2 class="welcome-title animated fadeInLeft">Launching In: <script type="text/javascript">
-//###################################################################
-// Author: ricocheting.com
-// Version: v3.0
-// Date: 2014-09-05
-// Description: displays the amount of time until the "dateFuture" entered below.
-
-var CDown = function() {
-	this.state=0;// if initialized
-	this.counts=[];// array holding countdown date objects and id to print to {d:new Date(2013,11,18,18,54,36), id:"countbox1"}
-	this.interval=null;// setInterval object
-}
-
-CDown.prototype = {
-	init: function(){
-		this.state=1;
-		var self=this;
-		this.interval=window.setInterval(function(){self.tick();}, 1000);
-	},
-	add: function(date,id){
-		this.counts.push({d:date,id:id});
-		this.tick();
-		if(this.state==0) this.init();
-	},
-	expire: function(idxs){
-		for(var x in idxs) {
-			this.display(this.counts[idxs[x]], "Now!");
-			this.counts.splice(idxs[x], 1);
-		}
-	},
-	format: function(r){
-		var out="";
-		if(r.d != 0){out += r.d +" "+((r.d==1)?"day":"days")+", ";}
-		if(r.h != 0){out += r.h +" "+((r.h==1)?"hour":"hours")+", ";}
-		out += r.m +" "+((r.m==1)?"min":"mins")+", ";
-		out += r.s +" "+((r.s==1)?"sec":"secs")+", ";
-
-		return out.substr(0,out.length-2);
-	},
-	math: function(work){
-		var	y=w=d=h=m=s=ms=0;
-
-		ms=(""+((work%1000)+1000)).substr(1,3);
-		work=Math.floor(work/1000);//kill the "milliseconds" so just secs
-
-		y=Math.floor(work/31536000);//years (no leapyear support)
-		w=Math.floor(work/604800);//weeks
-		d=Math.floor(work/86400);//days
-		work=work%86400;
-
-		h=Math.floor(work/3600);//hours
-		work=work%3600;
-
-		m=Math.floor(work/60);//minutes
-		work=work%60;
-
-		s=Math.floor(work);//seconds
-
-		return {y:y,w:w,d:d,h:h,m:m,s:s,ms:ms};
-	},
-	tick: function(){
-		var now=(new Date()).getTime(),
-			expired=[],cnt=0,amount=0;
-
-		if(this.counts)
-		for(var idx=0,n=this.counts.length; idx<n; ++idx){
-			cnt=this.counts[idx];
-			amount=cnt.d.getTime()-now;//calc milliseconds between dates
-
-			// if time is already past
-			if(amount<0){
-				expired.push(idx);
-			}
-			// date is still good
-			else{
-				this.display(cnt, this.format(this.math(amount)));
-			}
-		}
-
-		// deal with any expired
-		if(expired.length>0) this.expire(expired);
-
-		// if no active counts, stop updating
-		if(this.counts.length==0) window.clearTimeout(this.interval);
-		
-	},
-	display: function(cnt,msg){
-		document.getElementById(cnt.id).innerHTML=msg;
-	}
-};
-
-window.onload=function(){
-	var cdown = new CDown();
-
-	cdown.add(new Date(2015,1,16,12,0,0), "countbox1");
-};
-</script>
-<div id="countbox1"></div></h2>
+				<h2 class="welcome-title animated fadeInLeft">People, Purpose, Performance.</h2>
 				<p class="animated fadeInRight"> "Before you are a leader, success is all about growing yourself.
 				 	<br>When you become a leader, success is all about growing others." 
 				 	<br>Jack Welch
 				 	<br>
-
 				 	<br>
 				 	</p>
 				 	<p class="animated zoomIn">
-					<a onclick="mobile()" class="post-button nohighlight">&nbsp;&nbsp;&nbsp;&nbsp;On Mobile?&nbsp;&nbsp;&nbsp;&nbsp;</a> 
-					&nbsp;<a href="http://uclu.org/clubs-societies/leading-women-society" target="_blank" class="post-button nohighlight"> Membership Information</a>
-					&nbsp;<a href="technight.html" onClick="return targetopener(this)" class="post-button nohighlight">&nbsp;Tech Week Microsite&nbsp;</a>
+					<a onclick="mobile()" class="post-button nohighlight">&nbsp;&nbsp;&nbsp;&nbsp;On Mobile?&nbsp;&nbsp;&nbsp;&nbsp;</a> &nbsp;
+				 	<a href="technight.html" onClick="return targetopener(this)" class="post-button nohighlight">&nbsp;Tech Week Microsite&nbsp;</a> &nbsp;
+				 	<!--<a href="http://uclu.org/clubs-societies/leading-women-society" target="_blank" class="post-button nohighlight"> Membership Information</a>-->
 					</p>
 				<ul class="list-icons animated fadeInUp">
 					<li><i class="icon-trophy"></i></li>
@@ -176,45 +79,37 @@ window.onload=function(){
 			</div>
 			<div class="home-projects">
 				<div class="row">
-					<div class="col-md-6 col-sm-12">
+					<!--<div class="col-md-6 col-sm-12">
 						<div class="project-title animated fadeInUp">
 							<h2>Latest Events</h2>
 							<p>After a successful first social of the term with Cass, we are excited to be holding an inspirational leaders talk on the 9th February, tech talks, and more. </p>
 							<a class="pink-button" href="http://upto.com/s/wA7O" onclick="javascript:void window.open('http://upto.com/s/wA7O','1421538035596','width=700,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">View Our Full Calendar</a>
-							
+							&nbsp;<a href="http://uclu.org/clubs-societies/leading-women-society" target="_blank" class="pink-button nohighlight"> Membership Information</a>
 						</div>
-					</div>
-					<div class="project-home-holder col-md-6 col-sm-12">
+					</div>-->
+					<div class="project-home-holder col-md-12 col-sm-12">
 						<div class="row">
-							<div class="col-md-6 col-sm-6">
-								<div class="project-item one animated fadeInRight">
-									<img src="img/technightweb.png" alt="">
+							<div class="col-md-4 col-sm-3">
+								<div class="project-item one animated fadeInLeft">
+									<img src="img/people.png" alt="People">
 									<div class="overlay">
-										<h4><a href="https://www.facebook.com/events/1569167389994592/" target="_blank">Technology</a></h4>
+										<h4><a href="#">People</a></h4>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6 col-sm-6">
-								<div class="project-item two animated fadeInRight">
-									<img src="img/quadside.png" alt="">
+							<div class="col-md-4 col-sm-3">
+								<div class="project-item two animated fadeInLeft">
+									<img src="img/purpose.png" alt="Purpose">
 									<div class="overlay">
-										<h4><a href="http://www.ucl.ac.uk" target="_blank">UCL</a></h4>
+										<h4><a href="#">Purpose</a></h4>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6 col-sm-6">
-								<div class="project-item three animated fadeInRight">
-									<img src="img/9feb4web.png" alt="">
+							<div class="col-md-4 col-sm-3">
+								<div class="project-item three animated fadeInLeft">
+									<img src="img/performance.png" alt="Performances">
 									<div class="overlay">
-										<h4><a href="https://www.facebook.com/events/757730490969468/" target="_blank">Leadership</a></h4>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6">
-								<div class="project-item four animated fadeInRight">
-									<img src="img/CCEYweb.png" alt="">
-									<div class="overlay">
-										<h4><a href="http://crypticcampus.ey.com/" target="_blank">Cryptic Campus</a></h4>
+										<h4><a href="#">Performance</a></h4>
 									</div>
 								</div>
 							</div>
@@ -224,7 +119,454 @@ window.onload=function(){
 			</div>
 		</div>
 
+		<div id="menu-2" class="content about-section container">
+			<div class="our-story">
+				<div class="story-bg animated fadeIn"></div>
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="inner-story animated fadeInRight text-justify">
+							<h2 class ="text-center">ABOUT US</h2>
+							<h5 class="text-center">We wish to bring a </h5> 
+							<h4 class="text-center">sustainable balance and diversity</h4>
+							<h5 class="text-center">to leadership.</h5> <br>
+								<p class="text-indent">
+								We do this by empowering women to refine their definitions of career success and pursue them, whilst embracing personal development activities to be confident, proactive and supportive towards helping others. </p> <br>
+								<p class="text-indent">We believe in consensus building, and wish to include men in the conversation; We equip both men and women with the right tools for holistic leadership. To build a brighter future, we must be able to listen to each other.</p><br>
+								<p class="text-indent">How can women lead men if they cannot garner their respect? And how can a man lead well if he cannot respect women, his peers, in the process?</p><br>
+								<p class="text-indent">Our society is a forum for discussion and empowerment, and an avenue for social good in our communities.</p><br>
+							<h3 class="text-center">Read our</h3> 
+							<h2 class="text-center"><a href="presidentswelcome.html" onClick="return targetopener(this)" class="nohighlight">PRESIDENT'S WELCOME</a></h2>
+							<div class="btns"><button><a href="presidentswelcome.html" onClick="return targetopener(this)" class="nohighlight">Read Now</button></div> 
+							<!-- <div class="btns"><button id="show">Show</button><button id="hide">Hide</button></div>--> 
+							<br>
+							<div class="btns"><button><a href="http://www.uclu.org/clubs-societies/leading-women-society" target="_blank" class="nohighlight">Membership Information</a></button></div><br>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="our-offers">
+				<div class="offer-bg animated fadeIn"></div>
+				<div class="offer-header">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 text-center">
+							<div class="offer-title animated fadeInDown">
+								<h2>OUR SPONSORS</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="offer-holder">
+						<div class="col-md-4">
+							<div class="offer-item offer-1 animated fadeInLeft">
+								<figure>
+									<a href="http://accenture.com/ukgraduates" target="_blank"><img src="img/accentureweb.png" alt="Accenture"></a>
+								</figure>
+								<div class="offer-content text-center">
+									<h4><a href="http://accenture.com/ukgraduates" target="_blank" class="nohighlight">Accenture</a></h4>
+									<p class="text-justify">We are a world-leading provider of management consulting, technology and outsourcing services and have recently evolved our capabilities through the creation of a new business structure.</p>
+									<span class="offer-left"><i></i></span>
+									<span class="offer-right"><i></i></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="offer-item offer-1 animated zoomIn">
+								<figure>
+									<a href="https://www.db.com/careers/" target="_blank"><img src="img/deutscheweb.png" alt="Deutsche Bank"></a>
+								</figure>
+								<div class="offer-content text-center">
+									<h4><a href="https://www.db.com/careers/" target="_blank" class="nohighlight">Deutsche Bank</a></h4>
+									<p>Passion to Perform. 
+										<br>At Deutsche Bank this is the way we do business and the type of people we're looking for.
+										<br>We aspire to be the leading client-centric global universal bank.</p>
+									<span class="offer-left"><i></i></span>
+									<span class="offer-right"><i></i></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="offer-item offer-1 animated fadeInRight">
+								<figure>
+									<a href="http://www.mckinsey.com/careers.aspx" target="_blank"><img src="img/mckinseyweb.png" alt=""></a>
+								</figure>
+								<div class="offer-content text-center">
+									<h4><a href="http://www.mckinsey.com/careers.aspx" target="_blank" class="nohighlight">McKinsey &amp; Company</a></h4>
+									<p class="text-justify">McKinsey &amp; Company is a global management consulting firm that serves the leading businesses, governments, non governmental organizations, and not-for-profits.<br>
+									<br></p>
+									<span class="offer-left"><i></i></span>
+									<span class="offer-right"><i></i></span>
+								</div>
+							</div>
+						</div>
+						<!--<div class="col-md-4">
+							<div class="offer-item offer-2 animated fadeInLeft">
+								<figure>
+									<a href="http://careers.towerswatson.com/careers/united-kingdom/graduates.asp" target="_blank"><img src="img/towersweb.png" alt=""></a>
+								</figure>
+								<div class="offer-content text-center">
+									<h4>Towers Watson</h4>
+									<p>Sed sagittis nunc vel tellus ultricies auctor. </p>
+									<span class="offer-left"><i></i></span>
+									<span class="offer-right"><i></i></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="offer-item offer-2 animated zoomIn">
+								<figure>
+									<a href="http://www.aon.com/unitedkingdom/about-aon/careers.jsp" target="_blank"><img src="img/aonweb.png" alt=""></a>
+								</figure>
+								<div class="offer-content text-center">
+									<h4>Aon</h4>
+									<p>Sed sagittis nunc vel tellus ultricies auctor. </p>
+									<span class="offer-left"><i></i></span>
+									<span class="offer-right"><i></i></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="offer-item offer-2 animated fadeInRight">
+								<figure>
+									<a href="http://www.mara-foundation.org/" target="_blank"><img src="img/maraweb.png" alt=""></a>
+								</figure>
+								<div class="offer-content text-center">
+									<h4>Mara Foundation</h4>
+									<p>Sed sagittis nunc vel tellus ultricies auctor.</p>
+									<span class="offer-left"><i></i></span>
+									<span class="offer-right"><i></i></span>
+								</div>
+							</div>
+						</div>-->
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<div id="menu-3" class="content project-section container">
+			<div class="projects-header">
+				<h2 class="animated fadeInRight">Our Partners and Friends</h2>
+				<p class="animated fadeInLeft">
+							The Leading Women Society would like to thank our amazing partners and collaborators for being integral to many of our successful events.
+				</p>
+			</div>
+			<div class="projects-holder">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 p-1 animated umScaleIn">
+						<div class="project-item">
+							<img src="img/connect.png" alt="Connect Mentors">
+							<div class="overlay">
+								<h4><a href="https://connectmentors.london/" target="_blank">Connect</a></h4>
+								<br><h6>Tech Week Collaborator</h6>
+								<a href="https://twitter.com/Connectmentors" target="_blank"><i class="fa fa-twitter"></i></a>							
+								<a href="https://connectmentors.london/" target="_blank"><i class="fa fa-globe"></i></a>
+								<a href="mailto:hello@connectmentors.com?Subject=Contact%20via%20Leading%20Women%20website" target="_top"><i class="fa fa-envelope-o"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-4 p-2 animated umScaleIn">
+						<div class="project-item">
+							<img src="img/techsoc.png" alt="UCLU Tech Soc">
+							<div class="overlay">
+								<h4><a href="http://uclutech.com/" target="_blank">UCLU Tech Soc | Barclays</a></h4>
+								<br><h6>Tech Week Collaborator</h6>
+								<a href="https://twitter.com/uclutech" target="_blank"><i class="fa fa-twitter"></i></a>							
+								<a href="http://uclutech.com/" target="_blank"><i class="fa fa-globe"></i></a>
+								<a href="mailto:president@uclutech.com?Subject=Contact%20via%20Leading%20Women%20website" target="_top"><i class="fa fa-envelope-o"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 p-3 animated umScaleIn">
+						<div class="project-item">
+							<img src="img/clotho.png" alt="Clotho">
+							<div class="overlay">
+								<h4><a href="http://www.clotholondon.co.uk/" target="_blank">Clotho London</a></h4>
+								<br><h6>Tech Week Collaborator</h6>
+								<a href="https://twitter.com/clotholondon" target="_blank"><i class="fa fa-twitter"></i></a>							
+								<a href="http://www.clotholondon.co.uk/" target="_blank"><i class="fa fa-globe"></i></a>
+								<a href="mailto:caroline.sarah.wood@gmail.com?Subject=Contact%20via%20Leading%20Women%20website" target="_top"><i class="fa fa-envelope-o"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4 p-4 animated umScaleIn">
+						<div class="project-item">
+							<img src="img/swiftkey1.png" alt="Swiftkey">
+							<div class="overlay">
+								<h4><a href="http://swiftkey.com/" target="_blank">Swiftkey</a></h4>
+								<br><h6>Tech Week Collaborator</h6>
+								<a href="https://twitter.com/swiftkey" target="_blank"><i class="fa fa-twitter"></i></a>							
+								<a href="http://swiftkey.com/en/careers/" target="_blank"><i class="fa fa-globe"></i></a>
+								<a href="http://swiftkey.com/en/contact/" target="_blank"><i class="fa fa-envelope-o"></i></a> 
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4 p-5 animated umScaleIn">
+						<div class="project-item">
+							<img src="img/cfgweb.png" alt="Codefirst: Girls">
+							<div class="overlay">
+								<h4><a href="http://www.codefirstgirls.org.uk/" target="_blank">Codefirst: Girls</a></h4>
+								<br><h6>Tech Week Collaborator</h6>
+								<a href="https://twitter.com/CodeFirstGirls" target="_blank"><i class="fa fa-twitter"></i></a>							
+								<a href="http://www.codefirstgirls.org.uk/" target="_blank"><i class="fa fa-globe"></i></a>
+								<a href="mailto:info@codefirstgirls.org.uk?Subject=Contact%20via%20Leading%20Women%20website" target="_top"><i class="fa fa-envelope-o"></i></a> 
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4 p-6 animated umScaleIn">
+						<div class="project-item">
+							<img src="img/CSweb.png" alt="Credit Suisse">
+							<div class="overlay">
+								<h4><a href="https://www.credit-suisse.com/uk/en/careers.html" target="_blank">Credit Suisse</a></h4>
+								<br><h6>Tech Week Collaborator</h6>
+								<a href="https://twitter.com/CreditSuisse" target="_blank"><i class="fa fa-twitter"></i></a>
+								<a href="https://www.linkedin.com/company/credit-suisse" target="_blank"><i class="fa fa-linkedin"></i></a>
+								<a href="https://www.credit-suisse.com/uk/en.html" target="_blank"><i class="fa fa-globe"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4 p-6 animated umScaleIn">
+						<div class="project-item">
+							<img src="img/GITcomp.png" alt="Girls in Tech London">
+							<div class="overlay">
+								<h4><a href="http://www.girlsintechuk.com" target="_blank">Girls in Tech London</a></h4>
+								<br><h6>Tech Week Collaborator</h6>
+								<a href="https://twitter.com/Girlsintech_UK" target="_blank"><i class="fa fa-twitter"></i></a>
+								<a href="http://www.girlsintechuk.com" target="_blank"><i class="fa fa-globe"></i></a>
+								<a href="mailto:lora.schellenberg@girlsintech.org?Subject=Contact%20via%20Leading%20Women%20website" target="_top"><i class="fa fa-envelope-o"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>	
+			<div class="projects-header"  id="partners">
+			<br><br><br>
+				<h2 class="animated fadeInRight">Our Committee</h2>
+				<p class="animated fadeInLeft">
+							Committee photos are being edited and will be up soon! :) 
+				</p>
+			</div>
+			<div class="projects-holder">
+				<div class="row">
+					<div class="col-md-4 col-sm-6 p-1 animated umScaleIn">
+						<div class="project-item">
+							<img src="img/LWbasegreylarge.png" alt="">
+							<div class="overlay">
+								<h4><a href="#">Rasini Ranawake</a></h4>
+								<br><h5>PRESIDENT</h5>
+								<a href="#"><i class="fa fa-twitter"></i></a>							
+								<a href="https://uk.linkedin.com/in/rasiniranawake" target="_blank"><i class="fa fa-linkedin"></i></a>
+								<a href="mailto:president@lwucl.me?Subject=Contact%20via%20website" target="_top"><i class="fa fa-envelope-o"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 p-2 animated umScaleIn">
+						<div class="project-item">
+							<img src="img/LWbasegreylarge.png" alt="">
+							<div class="overlay">
+								<h4><a href="#">Margareta Chlubnova</a></h4>
+								<br><h5>TREASURER</h5>
+								<a href="#"><i class="fa fa-twitter"></i></a>							
+								<a href="https://cz.linkedin.com/pub/margareta-chlubnová/67/29b/2a2" target="_blank"><i class="fa fa-linkedin"></i></a>
+								<a href="#"><i class="fa fa-envelope-o"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 p-3 animated umScaleIn">
+						<div class="project-item">
+							<img src="img/LWbasegreylarge.png" alt="">
+							<div class="overlay">
+								<h4><a href="#">Eliza Leonidou</a></h4>
+								<br><h5>SECRETARY</h5>
+								<a href="#"><i class="fa fa-twitter"></i></a>							
+								<a href="http://uk.linkedin.com/pub/eliza-leonidou/6a/403/474" target="_blank"><i class="fa fa-linkedin"></i></a>
+								<a href="#"><i class="fa fa-envelope-o"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row"><h3 class="committee animated fadeInLeft">Internal &amp; External Relations</h3>
+					<div class="col-md-3 col-sm-6 p-4 animated umScaleIn">
+						<div class="project-item animated umScaleIn">
+							<img src="img/LWbasegreylarge.png" alt="">
+							<div class="overlay">								
+								<h4><a href="#">Aileen Gana</a></h4>
+								<h6>On-Campus Director</h6>
+								<a href="#"><i class="fa fa-twitter"></i></a>							
+								<a href="https://uk.linkedin.com/in/aileengana" target="_blank"><i class="fa fa-linkedin"></i></a>
+								<a href="#"><i class="fa fa-envelope-o"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="project-item p-5 animated umScaleIn">
+							<img src="img/LWbasegreylarge.png" alt="">
+							<div class="overlay">
+								<h4><a href="#">Michelle Kwong</a></h4>
+								<h6>Head of PR</h6>
+								<a href="https://twitter.com/kwongmichelle" target="_blank"><i class="fa fa-twitter"></i></a>							
+								<a href="http://kwongmichelle.wix.com/home" target="_blank"><i class="fa fa-globe"></i></a>
+								<a href="#"><i class="fa fa-envelope-o"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="project-item p-6 animated umScaleIn">
+							<img src="img/LWbasegreylarge.png" alt="">
+							<div class="overlay">
+								<h4><a href="#">Anusha Gupta </a></h4>
+								<h6>Sponsorship Director</h6>
+								<a href="#"><i class="fa fa-twitter"></i></a>							
+								<a href="#"><i class="fa fa-linkedin"></i></a>
+								<a href="#"><i class="fa fa-envelope-o"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="project-item p-7 animated umScaleIn">
+							<img src="img/LWbasegreylarge.png" alt="">
+							<div class="overlay">
+								<h4><a href="#">Sophia Zhong</a></h4>
+								<h6>Sponsorship Director</h6>
+								<a href="#"><i class="fa fa-twitter"></i></a>							
+								<a href="https://uk.linkedin.com/in/sophiazhong" target="_blank"><i class="fa fa-linkedin"></i></a>
+								<a href="#"><i class="fa fa-envelope-o"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row"><h3 class="committee animated fadeInRight">Events &amp; Publicity Team</h3>
+					<div class="col-md-3 col-sm-6 p-4 animated umScaleIn"> 
+						<div class="project-item animated umScaleIn">
+							<img src="img/LWbasegreylarge.png" alt="">
+							<div class="overlay">
+								<h4><a href="#">Jiawei Li</a></h4>
+								<h6>Events Director</h6>
+								<a href="#"><i class="fa fa-twitter"></i></a>							
+								<a href="https://uk.linkedin.com/pub/jiawei-li/64/122/275" target="_blank"><i class="fa fa-linkedin"></i></a>
+								<a href="#"><i class="fa fa-envelope-o"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="project-item p-5 animated umScaleIn">
+							<img src="img/LWbasegreylarge.png" alt="">
+							<div class="overlay">
+								<h4><a href="#">Jayna Devani</a></h4>
+								<h6>Events Coordinator</h6>
+								<a href="#"><i class="fa fa-twitter"></i></a>							
+								<a href="https://uk.linkedin.com/in/jaynadevani" target="_blank"><i class="fa fa-linkedin"></i></a>
+								<a href="#"><i class="fa fa-envelope-o"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="project-item p-6 animated umScaleIn">
+							<img src="img/LWbasegreylarge.png" alt="">
+							<div class="overlay">
+								<h4><a href="http://diana.click" target="_blank">Diana Lee</a></h4>
+								<h6>Events Coordinator &amp; <br>Web Developer/Designer</h6>
+								<a href="https://twitter.com/duhrtyd" target="_blank"><i class="fa fa-twitter"></i></a>							
+								<a href="http://uk.linkedin.com/in/dianaklee/" target="_blank"><i class="fa fa-linkedin"></i></a>
+								<a href="mailto:diana.lee.13@ucl.ac.uk?Subject=Contact%20via%20UCLULWS%20Website" target="_top"><i class="fa fa-envelope-o"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="project-item p-7 animated umScaleIn">
+							<img src="img/LWbasegreylarge.png" alt="">
+							<div class="overlay">
+								<h4><a href="#">Shakila Khan</a></h4>
+								<h6>Events Representative</h6>
+								<a href="#"><i class="fa fa-twitter"></i></a>							
+								<a href="#"><i class="fa fa-linkedin"></i></a>
+								<a href="#"><i class="fa fa-envelope-o"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row"><h3 class="committee animated fadeInLeft">First-Year Representatives</h3>
+					<div class="col-md-3 col-sm-6 p-4 col-md-offset-3 animated umScaleIn">
+						<div class="project-item animated umScaleIn">
+							<img src="img/LWbasegreylarge.png" alt="">
+							<div class="overlay">
+								<h4><a href="#">Margareta Chlubnova</a></h4>
+								<h6>First Year Representative &amp; Treasurer</h6>
+								<a href="#"><i class="fa fa-twitter"></i></a>							
+								<a href="https://cz.linkedin.com/pub/margareta-chlubnová/67/29b/2a2" target="_blank"><i class="fa fa-linkedin"></i></a>
+								<a href="#"><i class="fa fa-envelope-o"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="project-item p-5 animated umScaleIn">
+							<img src="img/LWbasegreylarge.png" alt="">
+							<div class="overlay">
+								<h4><a href="#">Firoza Dodhi</a></h4>
+								<h6>First Year Representative</h6>
+								<a href="#"><i class="fa fa-twitter"></i></a>							
+								<a href="https://uk.linkedin.com/pub/firoza-dodhi/a8/305/200" target="_blank"><i class="fa fa-linkedin"></i></a>
+								<a href="#"><i class="fa fa-envelope-o"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="menu-4" class="content blog-section container">
+			<div class="blog-header text-center">
+				<h2 class="animated fadeInRight">Hear It From Us</h2>
+				<p class="animated fadeInLeft">Our Latest News and Blog posts.</p>
+				<a href="eventscalendar.html" onClick="return targetopener(this)" class="post-button animated fadeInUp nohighlight">View Our Events Calendar</a>
+			</div>
+			<div class="row blog-posts">
+				<div class="col-md-4 col-sm-12">
+					<div class="blog-item post-1 animated zoomIn">
+						<div class="blog-bg blog-pink"></div>
+						<div class="blog-content">
+							<h3><a href="#">Inspiration Talks</a></h3>
+							<span class="solid-line"></span>
+							<p>On the 9th of February, we hosted a line up of inspirational speakers ranging from academia, medicine, and consulting. This evening was complemented by wine and a closing speech from our first president.
+							</p>
+							<a href="#" class="post-button">Post Coming Soon</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<div class="blog-item post-2 animated zoomIn">
+						<div class="blog-bg blog-blue"></div>
+						<div class="blog-content">
+							<h3><a href="#">Tech Week</a></h3>
+							<span class="solid-line"></span>
+							<p>Right after we get back from Reading Week, join our exploration into the world of technology with our amazing partners - Clotho, Codefirst Girls, Connect, Girls in Tech London, and the UCLU Technology Society.</p>
+							<a href="#" class="post-button">Post Coming Soon</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<div class="blog-item post-3 animated zoomIn">
+						<div class="blog-bg blog-green"></div>
+						<div class="blog-content">
+							<h3><a href="#">We joined Medium!</h3>
+							<span class="solid-line"></span>
+							<p>Stay up to date with all news from UCLU Leading Women Society at our newest blog on Medium!
+								<br>
+								<br> Visit our page now. And remember to follow us! 
+							</p>
+							<a href="https://medium.com/@UCLULWS/lw-comes-to-medium-7d7387615642" target="_blank" class="post-button">Read More</a>
+						</div>
+					</div>
+				</div>
+				<br><br>
+			</div>
+			<div class="blog-header text-center">
+				<h2 class="animated fadeInRight">Read On?</h2>
+				<p class="animated fadeInLeft">Click the button below for more.</p>
+				<a href="https://medium.com/@UCLULWS" target="_blank" class="post-button animated fadeInUp nohighlight">More News</a> 
+			</div>
+		</div>
 
 		<div id="menu-5" class="content contact-section container">
 			<div class="contact-header text-center">
@@ -356,6 +698,3 @@ window.onload=function(){
 
 </body>
 </html>
-
-
-
