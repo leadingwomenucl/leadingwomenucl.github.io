@@ -1,5 +1,5 @@
 function mobile() {
-    alert("Please rotate your phone to landscape view for a better display!");
+    alert("Please rotate your phone to landscape view for a better display! Also please click on photos for descriptions or external links.");
 }
 
 jQuery(document).ready(function($) {
