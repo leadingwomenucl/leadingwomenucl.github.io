@@ -876,6 +876,20 @@ span.solid-line {
     margin-bottom: 30px;
 }
 
+#mc_embed_signup {
+    margin: 5px;
+}
+
+#mc_embed_signup h2 {
+    color: #fff;
+    text-align: center;
+    margin: 3px;
+}
+
+.indicates-required {
+    text-align: right;
+}
+
 .main-footer {
     border-top: 2px solid #46494f;
     border-bottom: 2px solid #46494f;
