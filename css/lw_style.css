@@ -1038,6 +1038,25 @@ span[class*="border-"] {
     background: url("../img/shape-2.png") no-repeat;
 }
 
+.shape-3 {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    background: url("../img/shape-1.png") no-repeat;
+}
+
+.shape-4 {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    background: url("../img/shape-2.png") no-repeat;
+}
+
+
 .main-button,.main-footer .social li a {
     color: #fff;
     text-transform: uppercase;
