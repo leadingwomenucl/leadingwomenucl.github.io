@@ -282,6 +282,12 @@ h2.welcome-title {
     display: block;
 }
 
+.person img {
+    width: 100%;
+    clip: rect(0px,300px,300px,0px);
+    display: block;
+}
+
 .overlay {
     position: absolute;
     width: 100%;
