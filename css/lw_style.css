@@ -415,6 +415,10 @@ h2.welcome-title {
     font-size: 15px;
 }
 
+.pwm {
+    text-align: justify;
+}
+
 .btns{
     right: 0;
     text-align: center;
