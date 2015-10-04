@@ -267,6 +267,10 @@ h2.welcome-title {
 
 }
 
+.mentoring-btns {
+    padding: 20px 0 0 0;
+}
+
 .project-item {
     margin-bottom: 30px;
     position: relative;
