@@ -286,13 +286,6 @@ h2.welcome-title {
     display: block;
 }
 
-.person img {
-    width: 100%;
-    height: 300px;
-    /*clip: rect(0px,300px,300px,0px);*/
-    display: block;
-}
-
 .overlay {
     position: absolute;
     width: 100%;
@@ -628,6 +621,25 @@ span.offer-right {
 
 .committee {
     text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+    .committee-spacer {
+        padding-left: 12.5%;
+        padding-right: 0;
+        margin: 0;
+        min-width: 300px;
+    }
+    .person {
+        min-width: 280px;
+    }
+}
+
+.person img {
+    width: 100%;
+    height: 300px;
+    /*clip: rect(0px,300px,300px,0px);*/
+    display: block;
 }
 
 #partners {
